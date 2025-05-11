@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div class="container py-4">
+  <h2 class="mb-4">Модели {{ brand.name }}</h2>
+  <div class="row">
+    {% for model in models %}
+      <div class="col-6 col-md-4 mb-3">
+        <a href="#" class="btn btn-outline-secondary w-100">
+          {{ model.name }} ({{ model.year_from }}–{{ model.year_to }})
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

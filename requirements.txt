@@ -1,0 +1,29 @@
+# Django и утилиты
+Django==5.1.4
+python-decouple==3.8
+sqlparse==0.5.3
+tzlocal==5.2
+pytz
+
+# Формы (Bootstrap 4)
+django-crispy-forms==2.3
+crispy-bootstrap4==2024.10
+
+# Авторизация
+django-allauth==65.3.1
+social-auth-core==4.5.4
+oauthlib==3.2.2
+requests-oauthlib==2.0.0
+
+# Импорт/экспорт Excel
+pandas>=2.1,<2.2
+openpyxl==3.1.2
+
+# Мультимедиа
+Pillow==11.1.0
+
+# Почта
+requests==2.32.3
+
+# Платежи (если Razorpay используется)
+razorpay==1.4.2

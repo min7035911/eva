@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div class="container py-4">
+  <h2 class="mb-4">Выберите марку автомобиля</h2>
+  <div class="row">
+    {% for brand in brands %}
+      <div class="col-6 col-md-3 mb-3">
+        <a href="{% url 'model_list' brand.slug %}" class="btn btn-outline-primary w-100">
+          {{ brand.name }}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
